@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Practica #3- API WEB</title>
+    <style>
+        .form{
+            text-align : center;
+        }
+        .tables {
+            width: 80%;
+            border: 2px;
+            text-align: center;
+            border-color: black;
+            border:solid
+        }
+        .celdas{
+            text-align: center;
+            border:solid;
+        }
+        .labels{
+            width:20%;
+            text-align: right;
+            border:solid;
+        }
+        .lbInputs{
+            width:30%;
+            text-align: left;
+            border:solid;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <div>
+            <table class="tables">
+                <tr>
+                    <td class="celdas" colspan="4" style="font-family:'Lucida Sans'; font-weight:900;font-size:xx-large">Minimercado SúperMkd</td>
+
+                </tr>
+                <tr>
+                    <td class="celdas" colspan="4"><img src="Imagenes/SuperMkd.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="celdas" colspan="4">&nbsp;</td>
+
+                </tr>
+                <tr>
+                    <td class="labels">Nro. Doc. :</td>
+                    <td class="lbInputs"><input id="TxtNroDoc" value="" /></td>
+                    <td class="labels">Nombre :</td>
+                    <td class="lbInputs"><input id="TxtNombre" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="labels">Casificación :</td>
+                    <td class="lbInputs"><select id="cmbCalsif">
+                        <option value="0" selected>Seleccione tipo cliente</option>
+                        <option value="10">Ordinario</option>
+                        <option value="5">Especial</option>
+                        <option value="1">Preferente</option>
+                    </select></td>
+                    <td class="labels">Subtotal</td>
+                    <td class="lbInputs"><input type="text" id="TxtSubtotal"/></td>
+                </tr>
+                <tr>
+                    <td class="celdas" colspan="4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="celdas" colspan="2"><input type="button" id="BtnLimpiar" value="Limpiar" /></td>
+                    <td class="celdas" colspan="2"><input type="button" id="BtnProcesar" value="Procesar" /></td>
+                </tr>
+                <tr>
+                    <td class="celdas" colspan="4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="labels">Porcentaje Dscto. :</td>
+                    <td class="lbInputs"><input type="text" id="TxtPorcDsc" readonly /></td>
+                    <td class="labels">Valor Dscto. :</td>
+                    <td class="lbInputs"><input type="text" id="TxtPorcDsc" readonly /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                    <td class="labels">Valor a pagar :</td>
+                    <td class="lbInputs"><input type="text" id="TxtVrAPag" readonly/></td>
+                </tr>
+
+            </table>
+            </div>
+    </form>
+</body>
+</html>
